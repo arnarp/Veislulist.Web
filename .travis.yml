@@ -1,0 +1,7 @@
+sudo: false
+language: node_js
+node_js:
+  - node
+  - "5"
+  - "0.12"
+script: npm run build:prod
