@@ -1,9 +1,9 @@
 sudo: false
 language: node_js
 node_js:
-  - node
   - "5"
-  - "0.12"
 script: npm run build:prod
+before_deploy: "mv dist wwwroot"
 deploy:
   provider: azure_web_apps
+  verbose: true
